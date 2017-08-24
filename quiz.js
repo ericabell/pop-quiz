@@ -23,3 +23,10 @@ let math = function(a,b,c) {
 }
 
 console.log(`Calling math(3,4,2) = ${math(3,4,2)}`);
+
+// QUESTION 4
+let toString = function(arr) {
+  return arr.join(' ');
+}
+
+console.log(`Calling toString: ${toString(['now','is','the','time'] )}`);
