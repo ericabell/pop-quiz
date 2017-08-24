@@ -58,7 +58,6 @@ let reverse = function( str ) {
   str.split('').forEach( (char) => {
     reversed.unshift(char);
   })
-  console.log(reversed);
   return reversed.join('');
 }
 
