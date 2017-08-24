@@ -65,11 +65,10 @@ let reverse = function( str ) {
 console.log(`Calling reverse(): ${reverse('hello')}`);
 
 // // QUESTION 8
-// let sleep = function() {
-//   let now = Date.now();
-//   console.log('before sleep loop');
-//
-//   setTimer(() =>{console.log('after sleep loop');}, 1000)
-// }
-//
-// sleep();
+let sleep = function() {
+  let now = Date.now();
+  console.log('before sleep loop');
+  setTimeout( ()=> {console.log('after sleep loop');} , 1000)
+}
+
+sleep();
