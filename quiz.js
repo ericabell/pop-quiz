@@ -54,17 +54,22 @@ callme2( (str2) => {
 
 // QUESTION 7
 let reverse = function( str ) {
-  return str
+  let reversed = []
+  str.split('').forEach( (char) => {
+    reversed.unshift(char);
+  })
+  console.log(reversed);
+  return reversed.join('');
 }
 
 console.log(`Calling reverse(): ${reverse('hello')}`);
 
-// QUESTION 8
-let sleep = function() {
-  let now = Date.now();
-  console.log('before sleep loop');
-
-  setTimer(() =>{console.log('after sleep loop');}, 1000)
-}
-
-sleep();
+// // QUESTION 8
+// let sleep = function() {
+//   let now = Date.now();
+//   console.log('before sleep loop');
+//
+//   setTimer(() =>{console.log('after sleep loop');}, 1000)
+// }
+//
+// sleep();
