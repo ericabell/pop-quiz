@@ -9,9 +9,17 @@ let begin = function() {
 
 begin();
 
+// QUESTION 2
 let echo = function(arg) {
   return arg;
 }
 
 let string = 'the iron yard';
 assert( echo(string) === string );
+
+// QUESTION 3
+let math = function(a,b,c) {
+  return (a+b)*c;
+}
+
+console.log(`Calling math(3,4,2) = ${math(3,4,2)}`);
