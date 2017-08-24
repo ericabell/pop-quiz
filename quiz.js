@@ -30,3 +30,14 @@ let toString = function(arr) {
 }
 
 console.log(`Calling toString: ${toString(['now','is','the','time'] )}`);
+
+
+// QUESTION 5
+let callme = function( callback ) {
+  console.log('in first function');
+  callback('in the second function');
+}
+
+callme( (str) => {
+  console.log(str);
+});
