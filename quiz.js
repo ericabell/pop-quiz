@@ -51,3 +51,20 @@ let callme2 = function( callback, str ) {
 callme2( (str2) => {
   console.log('in second function');
   console.log(str2);} , 'hello' );
+
+// QUESTION 7
+let reverse = function( str ) {
+  return str
+}
+
+console.log(`Calling reverse(): ${reverse('hello')}`);
+
+// QUESTION 8
+let sleep = function() {
+  let now = Date.now();
+  console.log('before sleep loop');
+
+  setTimer(() =>{console.log('after sleep loop');}, 1000)
+}
+
+sleep();
