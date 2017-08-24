@@ -41,3 +41,13 @@ let callme = function( callback ) {
 callme( (str) => {
   console.log(str);
 });
+
+// QUESTION 6
+let callme2 = function( callback, str ) {
+  console.log('in first function');
+  callback(str);
+}
+
+callme2( (str2) => {
+  console.log('in second function');
+  console.log(str2);} , 'hello' );
